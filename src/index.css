@@ -119,7 +119,7 @@ img{
 
 /*tablets*/
 
-@media screen and (max-widht: 1024px){
+@media screen and (max-width: 1024px){
     .container{
         width: var(--container-width-md);
     }
@@ -132,7 +132,7 @@ img{
 
 /*smarthphone*/
 
-@media screen and (max-widht: 600px){
+@media screen and (max-width: 600px){
     .container{
         width: var(--container-width-sm);
     }
