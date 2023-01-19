@@ -5,7 +5,7 @@ import {FaFacebookMessenger} from 'react-icons/fa'
 import {AiOutlineWhatsApp} from 'react-icons/ai'
 
 
-const contact = () => {
+const Contact = () => {
   
    return (
     <section id='contact'>
@@ -49,4 +49,4 @@ const contact = () => {
    )
 };
 
-export default contact
+export default Contact
