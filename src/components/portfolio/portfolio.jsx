@@ -9,6 +9,65 @@ import IMG6 from '../../assets/eksy.png'
 import IMG7 from '../../assets/griplockties.png'
 import IMG8 from '../../assets/utah.png'
 
+const data = [
+{
+    id: 1,
+    image: IMG1,
+    title: 'Agency Theme Wordpress',
+    demo: 'https://nuyidl.com'
+},
+
+{
+    id: 2,
+    image: IMG2,
+    title: 'Theme design Wordpress',
+    demo: 'https://luishuarachi.com/'
+},
+
+{
+    id: 3,
+    image: IMG3,
+    title: 'Shopify Design and SEO',
+    demo: 'https://momsplaceglutenfree.com/'
+},
+
+{
+    id: 4,
+    image: IMG4,
+    title: 'Wordpress Elementor custom theme and SEO',
+    demo: 'https://johnowenwilde.com/'
+},
+
+{
+    id: 5,
+    image: IMG5,
+    title: 'Shopify design and SEO',
+    demo: 'https://liferocksplantfood.shop/'
+},
+
+{
+    id: 6,
+    image: IMG6,
+    title: 'Wordpress Elementor custom theme',
+    demo: 'https://eksayn.com/'
+},
+
+{
+    id: 7,
+    image: IMG7,
+    title: 'Wordpress Beaver builder Woocommerce',
+    demo: 'https://griplockties.com/'
+},
+
+{
+    id: 8,
+    image: IMG8,
+    title: 'Wordpress theme customize',
+    demo: 'https://utahboxtruckrentals.com'
+},
+
+]
+
 const portfolio = () => {
   return (
     <section id='portfolio'>
@@ -16,93 +75,21 @@ const portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio_container">
-          <article className='portfolio_item'>
+          {
+            data.map(({id,image,title,demo}) => {
+                return (
+                    <article key={id} className='portfolio_item'>
                 <div className="portfolio_item-image">
-                    <img src={IMG1} alt="" />
+                    <img src={image} alt={title} />
                 </div>
-                <h3>Agency Theme Wordpress</h3>
+                <h3>{title}</h3>
                 <div className="portfolio_item-cta">
-                    <a href="https://nuyidl.com" className='btn' target='_blank'>Nuyidl</a>
-                    <a href="https://nuyidl.com" className='btn btn-primary' target='_blank'>Live Demo</a>
+                    <a href={demo} className='btn btn-primary'  target='_blank'>Live Demo</a>
                 </div>
           </article>
-
-          <article className='portfolio_item'>
-                <div className="portfolio_item-image">
-                    <img src={IMG2} alt="" />
-                </div>
-                <h3>Theme design Wordpress</h3>
-                <div className="portfolio_item-cta">
-                    <a href="https://nuyidl.com" className='btn' target='_blank'>Nuyidl</a>
-                    <a href="https://nuyidl.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
-
-          <article className='portfolio_item'>
-                <div className="portfolio_item-image">
-                    <img src={IMG3} alt="" />
-                </div>
-                <h3>Shopify Design and SEO</h3>
-                <div className="portfolio_item-cta">
-                    <a href="https://nuyidl.com" className='btn' target='_blank'>Nuyidl</a>
-                    <a href="https://nuyidl.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
-
-          <article className='portfolio_item'>
-                <div className="portfolio_item-image">
-                    <img src={IMG4} alt="" />
-                </div>
-                <h3>Wordpress Elementor custom theme and SEO</h3>
-                <div className="portfolio_item-cta">
-                    <a href="https://nuyidl.com" className='btn' target='_blank'>Nuyidl</a>
-                    <a href="https://nuyidl.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
-
-          <article className='portfolio_item'>
-                <div className="portfolio_item-image">
-                    <img src={IMG5} alt="" />
-                </div>
-                <h3>Shopify design and SEO</h3>
-                <div className="portfolio_item-cta">
-                    <a href="https://nuyidl.com" className='btn' target='_blank'>Nuyidl</a>
-                    <a href="https://nuyidl.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
-
-          <article className='portfolio_item'>
-                <div className="portfolio_item-image">
-                    <img src={IMG6} alt="" />
-                </div>
-                <h3>Wordpress Elementor custom theme</h3>
-                <div className="portfolio_item-cta">
-                    <a href="https://nuyidl.com" className='btn' target='_blank'>Nuyidl</a>
-                    <a href="https://nuyidl.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
-
-          <article className='portfolio_item'>
-                <div className="portfolio_item-image">
-                    <img src={IMG7} alt="" />
-                </div>
-                <h3>Wordpress Beaver builder Woocommerce</h3>
-                <div className="portfolio_item-cta">
-                    <a href="https://nuyidl.com" className='btn' target='_blank'>Nuyidl</a>
-                    <a href="https://nuyidl.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
-
-          <article className='portfolio_item'>
-                <div className="portfolio_item-image">
-                    <img src={IMG8} alt="" />
-                </div>
-                <h3>Wordpress theme customize</h3>
-                <div className="portfolio_item-cta">
-                    <a href="https://nuyidl.com" className='btn' target='_blank'>Nuyidl</a>
-                    <a href="https://nuyidl.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-                </div>
-          </article>
+            )
+          })
+        }
       </div>
     </section>
   )
