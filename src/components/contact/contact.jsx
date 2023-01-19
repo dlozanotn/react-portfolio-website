@@ -3,10 +3,27 @@ import './contact.css'
 import {AiOutlineMail} from 'react-icons/ai'
 import {FaFacebookMessenger} from 'react-icons/fa'
 import {AiOutlineWhatsApp} from 'react-icons/ai'
-
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
+ 
 
 const Contact = () => {
-  
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_vy1pgv7', 'template_2ud2o05', form.current, 'pkeJkurLDEjVaWVA0')
+
+    e.target.reset()
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
    return (
     <section id='contact'>
       <h5>Get in Touch</h5>
@@ -38,7 +55,7 @@ const Contact = () => {
            {/*Contac left ends */}
         
                
-        <form action=''>
+        <form ref={form} onSubmit={sendEmail}>
             <input type="text" name='name' placeholder='Your Full Name' required />
             <input type="email" name="email" placeholder='Your email' required />
             <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
