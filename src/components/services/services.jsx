@@ -17,15 +17,15 @@ const services = () => {
                     <ul className="service_list">
                       <li>
                         <BiCheck className='service_list-icon'/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Figma Design</p>
                       </li>
                       <li>
                         <BiCheck className='service_list-icon'/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Design thinking in USer</p>
                       </li>
                       <li>
                         <BiCheck className='service_list-icon'/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Social media design</p>
                       </li>
                     </ul>
               </article>
@@ -38,15 +38,15 @@ const services = () => {
                     <ul className="service_list">
                       <li>
                         <BiCheck className='service_list-icon'/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Wordpress custom themes</p>
                       </li>
                       <li>
                         <BiCheck className='service_list-icon'/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Wordpress custom theme blocks</p>
                       </li>
                       <li>
                         <BiCheck className='service_list-icon'/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Wordpress and Elmentor</p>
                       </li>
                     </ul>
               </article>
@@ -59,15 +59,15 @@ const services = () => {
                     <ul className="service_list">
                       <li>
                         <BiCheck className='service_list-icon'/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>SEO on Site</p>
                       </li>
                       <li>
                         <BiCheck className='service_list-icon'/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>SEO audit</p>
                       </li>
                       <li>
                         <BiCheck className='service_list-icon'/>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Connect diferent TAGS to the site</p>
                       </li>
                     </ul>
               </article>
