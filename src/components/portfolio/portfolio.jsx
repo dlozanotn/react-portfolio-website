@@ -4,7 +4,7 @@ import IMG1 from '../../assets/nuyidl.png'
 import IMG2 from '../../assets/luishuarachi.png'
 import IMG3 from '../../assets/moms.png'
 import IMG4 from '../../assets/shalfin.png'
-import IMG5 from '../../assets/Untitled.png'
+import IMG5 from '../../assets/web-evolution.png'
 import IMG6 from '../../assets/eksy.png'
 import IMG7 from '../../assets/griplockties.png'
 import IMG8 from '../../assets/utah.png'
@@ -41,8 +41,8 @@ const data = [
 {
     id: 5,
     image: IMG5,
-    title: 'Shopify design and SEO',
-    demo: 'https://liferocksplantfood.shop/'
+    title: 'Wordpress with elementor from scratch',
+    demo: 'https://evolutioncombatsystems.com/'
 },
 
 {
