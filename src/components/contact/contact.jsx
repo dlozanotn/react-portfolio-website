@@ -41,8 +41,8 @@ const Contact = () => {
           <article className="contact_option">
               <FaFacebookMessenger className='contact-icon'/>
               <h4>Messenger</h4>
-              <h5>Nuyidlmarketing</h5>
-              <a href="https://m.me/nuyidlmarketing">Send a Message</a>
+              <h5>Nuyidl</h5>
+              <a href="https://m.me/nuyidl">Send a Message</a>
           </article>
 
           <article className="contact_option">

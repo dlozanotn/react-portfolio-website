@@ -7,14 +7,15 @@ import IMG4 from '../../assets/shalfin.png'
 import IMG5 from '../../assets/web-evolution.png'
 import IMG6 from '../../assets/eksy.png'
 import IMG7 from '../../assets/griplockties.png'
-import IMG8 from '../../assets/utah.png'
+import IMG8 from '../../assets/drizlee.png'
+import IMG9 from '../../assets/grandvilla.png'
 
 const data = [
 {
     id: 1,
     image: IMG1,
     title: 'Agency Theme Wordpress',
-    demo: 'https://nuyidl.com'
+    demo: 'https://nuyidlweb.com'
 },
 
 {
@@ -62,8 +63,17 @@ const data = [
 {
     id: 8,
     image: IMG8,
-    title: 'Wordpress theme customize',
-    demo: 'https://utahboxtruckrentals.com'
+    title: 'Shopify theme customize',
+    demo: 'https://https://drizzlescones.com'
+
+},
+
+{
+    id: 9,
+    image: IMG9,
+    title: 'Wordpress theme customize Elementor',
+    demo: 'https://grandvillainnandsuites.com/'
+
 },
 
 ]
